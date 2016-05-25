@@ -1,10 +1,14 @@
 import {Component} from '@angular/core';
 import {AlertComponent} from 'ng2-bootstrap/ng2-bootstrap';
 
+import {SimpleDemoComponent} from './simple-demo.component';
+
 @Component({
   selector: 'my-app',
-  directives: [AlertComponent],
-  template: `<alert type="info">ng2-bootstrap hello world!</alert>`
+  directives: [AlertComponent, SimpleDemoComponent],
+  template: `
+  <simple-demo></simple-demo>
+  `
 })
 export class AppComponent {
 }
